@@ -1,0 +1,20 @@
+uuid: 1c7e08c9-e5ad-4fac-877e-05ec91128483
+langcode: en
+status: true
+dependencies:
+  theme:
+    - temal3
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: temal3_primary_admin_actions
+theme: temal3
+region: header
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

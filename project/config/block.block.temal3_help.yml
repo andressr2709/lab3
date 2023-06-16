@@ -1,0 +1,22 @@
+uuid: 84bb7a39-078e-4822-a584-d5c5887198c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - temal3
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: temal3_help
+theme: temal3
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

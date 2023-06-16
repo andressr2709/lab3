@@ -16,10 +16,16 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/color_field": "^3.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
-        "drush/drush": "^11"
+        "drupal/devel": "^5.1",
+        "drupal/paragraphs": "^1.15",
+        "drupal/ui_patterns": "^1.5",
+        "drush/drush": "^11.5"
     },
     "require-dev": {
         "drupal/core-dev": "^10.0"
@@ -35,7 +41,8 @@
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "cweagans/composer-patches": true
         },
         "sort-packages": true
     },
@@ -43,7 +50,11 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
+            },
+            "file-mapping": {
+                "[web-root]/sites/development.services.yml": false
             }
+
         },
         "installer-paths": {
             "web/core": [

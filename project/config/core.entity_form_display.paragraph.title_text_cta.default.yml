@@ -1,0 +1,42 @@
+uuid: ac40099c-68a3-4502-81d4-27eb41c9ad9f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.title_text_cta.field_boton
+    - field.field.paragraph.title_text_cta.field_enlace_cta
+    - field.field.paragraph.title_text_cta.field_texto
+    - paragraphs.paragraphs_type.title_text_cta
+  module:
+    - link
+    - text
+id: paragraph.title_text_cta.default
+targetEntityType: paragraph
+bundle: title_text_cta
+mode: default
+content:
+  field_boton:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace_cta:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_texto:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

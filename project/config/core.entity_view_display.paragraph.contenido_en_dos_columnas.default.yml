@@ -1,0 +1,18 @@
+uuid: 697a9855-9175-4f25-9db6-86bf9950b27f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.contenido_en_dos_columnas
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+id: paragraph.contenido_en_dos_columnas.default
+targetEntityType: paragraph
+bundle: contenido_en_dos_columnas
+mode: default
+content: {  }
+hidden: {  }

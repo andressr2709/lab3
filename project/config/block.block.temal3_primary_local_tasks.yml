@@ -1,0 +1,22 @@
+uuid: a2088ec2-998b-47dc-a0b2-d09a08a6e5d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - temal3
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: temal3_primary_local_tasks
+theme: temal3
+region: header
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
