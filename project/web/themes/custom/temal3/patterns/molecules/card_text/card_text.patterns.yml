@@ -1,0 +1,21 @@
+text:
+  label: 'Card Text'
+  description: 'Title component'
+  fields:
+    text:
+      type: string
+      label: Title text
+      description: Text to be placed on the title.
+      preview: 'Read more'
+    textd:
+      type: string
+      label: Description text
+      description: Text to be placed on the description.
+      preview: 'Read more'
+    
+  libraries:
+    -
+      text:
+        css:
+          component:
+            css/styles.css: {}

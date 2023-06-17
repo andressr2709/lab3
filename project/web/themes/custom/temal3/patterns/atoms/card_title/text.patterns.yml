@@ -1,0 +1,17 @@
+text:
+  label: 'Title'
+  description: 'Title component'
+  fields:
+    text:
+      type: string
+      label: Title text
+      description: Text to be placed on the title.
+      preview: 'Read more'
+    
+  libraries:
+    -
+      text:
+        css:
+          component:
+            css/styles.css: {}
+
