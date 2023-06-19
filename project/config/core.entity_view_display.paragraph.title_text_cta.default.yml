@@ -8,9 +8,71 @@ dependencies:
     - field.field.paragraph.title_text_cta.field_texto
     - paragraphs.paragraphs_type.title_text_cta
   module:
+    - layout_builder
     - link
     - options
     - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9a47d86c-5e3f-4159-a814-480d6c015f7c:
+            uuid: 9a47d86c-5e3f-4159-a814-480d6c015f7c
+            region: content
+            configuration:
+              id: 'field_block:paragraph:title_text_cta:field_enlace_cta'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          5a1570ce-69ee-4c26-b731-adc69b4b9f06:
+            uuid: 5a1570ce-69ee-4c26-b731-adc69b4b9f06
+            region: content
+            configuration:
+              id: 'field_block:paragraph:title_text_cta:field_texto'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          9bb72a2c-d3a5-4dab-9bc6-6e82b6e9aa90:
+            uuid: 9bb72a2c-d3a5-4dab-9bc6-6e82b6e9aa90
+            region: content
+            configuration:
+              id: 'field_block:paragraph:title_text_cta:field_boton'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: paragraph.title_text_cta.default
 targetEntityType: paragraph
 bundle: title_text_cta
