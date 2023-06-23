@@ -1,11 +1,35 @@
-.pstyle{
+.card{
+    display: flex;
     border: 2px solid rgb(255, 255, 255);
-    background-color: rgb(193, 143, 69);
+    background-color: rgb(7, 58, 105);
     color: rgb(255, 255, 255);
-    padding: 14px 28px;
-    padding-top: 2em;
-    padding-bottom: 8em;
+    padding: 40px 40px;
     font-size: 16px;
     cursor: pointer;
     text-decoration:none;
 }
+
+.cardcontent{
+    width: 40%;
+    align-self: center;
+}
+
+.cardtitle{
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}
+
+.cardtext{
+    color: rgb(255, 255, 255);
+}
+
+.cardcta{
+    width: 40%;
+    align-self: center;
+    position: relative;
+    margin-left: 160px;
+}
+
+
+
+

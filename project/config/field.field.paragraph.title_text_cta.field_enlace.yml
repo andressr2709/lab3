@@ -1,0 +1,32 @@
+uuid: 8692cb28-d93a-48f9-951f-6e1b30226205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace
+    - paragraphs.paragraphs_type.title_text_cta
+  module:
+    - entity_reference_revisions
+id: paragraph.title_text_cta.field_enlace
+field_name: field_enlace
+entity_type: paragraph
+bundle: title_text_cta
+label: enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      contenido_en_dos_columnas:
+        weight: 3
+        enabled: false
+      title_text_cta:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

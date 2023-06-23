@@ -1,21 +1,53 @@
-text:
-  label: 'Card Text'
-  description: 'Title component'
-  fields:
-    text:
-      type: string
-      label: Title text
-      description: Text to be placed on the title.
-      preview: 'Read more'
-    textd:
-      type: string
-      label: Description text
-      description: Text to be placed on the description.
-      preview: 'Read more'
+# card_text:
+#   label: 'Card Text'
+#   description: 'Title component'
+#   fields:
+#     title:
+#       type: string
+#       label: Title text
+#       description: Text to be placed on the title.
+#       preview: 'Read more'
+#     text:
+#       type: string
+#       label: Description text
+#       description: Text to be placed on the description.
+#       preview: 'Read more'
+
+#     cta:
     
+#   libraries:
+#     -
+#       card_text: 
+#         css:
+#           component:
+#             css/styles.css: {}
+
+card_text:
+  label: 'Title, text'
+  description: 'Component with title, text.'
+  fields:
+    title:
+      type: string
+      label: Title
+      description: Title of the card.
+      preview: '¿SABIAS QUE...?'
+    text: 
+      type: string
+      label: Text
+      description: Text of the card.
+      preview: 'Para poder ejercer y realizar sus tareas y funciones como notaria o notario público, debe mantener actualizados sus datos, tales como teléfonos direcciones y correo electrónico'
+    cta: 
+      type: url
+      label: URL
+      description: Call to action
+      preview: 'https://google.com'
   libraries:
     -
-      text:
+      button:
+        css:
+          component:
+            css/styles.css: {}
+      card_text:
         css:
           component:
             css/styles.css: {}

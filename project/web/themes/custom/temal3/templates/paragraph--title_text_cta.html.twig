@@ -49,10 +49,13 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ pattern('button',{
-        text: 'Hola',
-        url: '/node',
-      }) }}
+      {{ pattern('card_text',{
+        title: 'Drupal',
+        text: 'Hola, esto es una prueba',
+        cta: paragraph.field_link
+      }) }},
+      
     {% endblock %}
+
   </div>
 {% endblock paragraph %}

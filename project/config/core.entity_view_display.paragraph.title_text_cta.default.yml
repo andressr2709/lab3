@@ -4,12 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.title_text_cta.field_boton
-    - field.field.paragraph.title_text_cta.field_enlace_cta
+    - field.field.paragraph.title_text_cta.field_enlace
     - field.field.paragraph.title_text_cta.field_texto
     - paragraphs.paragraphs_type.title_text_cta
   module:
+    - entity_reference_revisions
     - layout_builder
-    - link
+    - layout_discovery
     - options
     - text
 third_party_settings:
@@ -22,26 +23,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          9a47d86c-5e3f-4159-a814-480d6c015f7c:
-            uuid: 9a47d86c-5e3f-4159-a814-480d6c015f7c
-            region: content
-            configuration:
-              id: 'field_block:paragraph:title_text_cta:field_enlace_cta'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: link
-                label: above
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           5a1570ce-69ee-4c26-b731-adc69b4b9f06:
             uuid: 5a1570ce-69ee-4c26-b731-adc69b4b9f06
             region: content
@@ -72,6 +53,23 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
+          64a4b013-35e6-496f-ba6f-3e1fd1dac26a:
+            uuid: 64a4b013-35e6-496f-ba6f-3e1fd1dac26a
+            region: content
+            configuration:
+              id: 'field_block:paragraph:title_text_cta:field_enlace'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
         third_party_settings: {  }
 id: paragraph.title_text_cta.default
 targetEntityType: paragraph
@@ -85,17 +83,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
-  field_enlace_cta:
-    type: link
+  field_enlace:
+    type: entity_reference_revisions_entity_view
     label: above
     settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    weight: 0
+    weight: 3
     region: content
   field_texto:
     type: text_default
