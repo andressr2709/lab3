@@ -1,102 +1,50 @@
-uuid: 1c6b68d0-59a3-403c-851b-b914114bf520
+uuid: 5bcd1c2a-deb2-42e2-a38f-c55841b14cb3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.title_text_cta.field_boton
-    - field.field.paragraph.title_text_cta.field_enlace
-    - field.field.paragraph.title_text_cta.field_texto
+    - field.field.paragraph.title_text_cta.field_color
+    - field.field.paragraph.title_text_cta.field_cta
+    - field.field.paragraph.title_text_cta.field_text
+    - field.field.paragraph.title_text_cta.field_title
     - paragraphs.paragraphs_type.title_text_cta
   module:
     - entity_reference_revisions
-    - layout_builder
-    - layout_discovery
     - options
-    - text
-third_party_settings:
-  layout_builder:
-    enabled: true
-    allow_custom: false
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          5a1570ce-69ee-4c26-b731-adc69b4b9f06:
-            uuid: 5a1570ce-69ee-4c26-b731-adc69b4b9f06
-            region: content
-            configuration:
-              id: 'field_block:paragraph:title_text_cta:field_texto'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: text_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 1
-            additional: {  }
-          9bb72a2c-d3a5-4dab-9bc6-6e82b6e9aa90:
-            uuid: 9bb72a2c-d3a5-4dab-9bc6-6e82b6e9aa90
-            region: content
-            configuration:
-              id: 'field_block:paragraph:title_text_cta:field_boton'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: list_default
-                label: above
-                settings: {  }
-                third_party_settings: {  }
-            weight: 2
-            additional: {  }
-          64a4b013-35e6-496f-ba6f-3e1fd1dac26a:
-            uuid: 64a4b013-35e6-496f-ba6f-3e1fd1dac26a
-            region: content
-            configuration:
-              id: 'field_block:paragraph:title_text_cta:field_enlace'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: entity_reference_revisions_entity_view
-                label: above
-                settings:
-                  view_mode: default
-                  link: ''
-                third_party_settings: {  }
-            weight: 3
-            additional: {  }
-        third_party_settings: {  }
 id: paragraph.title_text_cta.default
 targetEntityType: paragraph
 bundle: title_text_cta
 mode: default
 content:
-  field_boton:
-    type: list_default
-    label: above
+  field_color:
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
-  field_enlace:
+  field_cta:
     type: entity_reference_revisions_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
-  field_texto:
-    type: text_default
-    label: above
+  field_text:
+    type: basic_string
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
     region: content
 hidden: {  }

@@ -49,13 +49,11 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ pattern('card_text',{
-        title: 'Drupal',
-        text: 'Hola, esto es una prueba',
-        cta: paragraph.field_link
-      }) }},
-      
+      {{ pattern('title_text_cta', {
+        title: content.field_title,
+        text: content.field_text,
+        cta: content.field_cta
+      }, paragraph.field_color.0.value) }}
     {% endblock %}
-
   </div>
 {% endblock paragraph %}

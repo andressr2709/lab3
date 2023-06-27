@@ -1,0 +1,10 @@
+uuid: 96f3a44f-c045-4e64-bbab-e969dd437b74
+langcode: en
+status: true
+dependencies: {  }
+id: layout_2_columns
+label: 'Layout: 2 columns'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

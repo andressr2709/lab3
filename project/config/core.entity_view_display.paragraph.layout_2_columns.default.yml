@@ -1,0 +1,43 @@
+uuid: 1e847da6-a608-4d80-baed-0ea492b53c11
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.layout_2_columns.field_left_content
+    - field.field.paragraph.layout_2_columns.field_proportion
+    - field.field.paragraph.layout_2_columns.field_right_content
+    - paragraphs.paragraphs_type.layout_2_columns
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.layout_2_columns.default
+targetEntityType: paragraph
+bundle: layout_2_columns
+mode: default
+content:
+  field_left_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_proportion:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_right_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
